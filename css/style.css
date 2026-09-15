@@ -379,7 +379,8 @@ p {
 
 .page-hero {
   padding: 60px 0 52px;
-  background: var(--bg-alt);
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
 }
 
 .page-hero p {
@@ -494,7 +495,9 @@ p {
 /* ---------- Alt section background ---------- */
 
 .section-alt {
-  background: var(--bg-alt);
+  background: var(--bg);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
 }
 
 /* ---------- Client wordmark strip ---------- */
