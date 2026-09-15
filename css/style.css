@@ -308,14 +308,32 @@ p {
   gap: 24px;
 }
 
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
 
+@media (max-width: 1040px) {
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 900px) {
   .grid-3, .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .grid-4 {
     grid-template-columns: 1fr;
   }
 }
@@ -376,6 +394,43 @@ p {
   background: var(--bg-alt);
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
+}
+
+/* ---------- Client wordmark strip ---------- */
+
+.client-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.client-strip span {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 9px 18px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-dim);
+}
+
+.client-groups {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+@media (max-width: 760px) {
+  .client-groups {
+    grid-template-columns: 1fr;
+  }
+}
+
+.client-groups h3 {
+  font-size: 0.95rem;
+  color: var(--text-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 18px;
 }
 
 /* ---------- Stats / credibility strip ---------- */

@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Casi Studio | Artel S.r.l.</title>
-<meta name="description" content="Problema, soluzione, tecnologie e risultato: i progetti di automazione, telecontrollo e system integration di Artel.">
+<meta name="description" content="Esempi tipici di intervento di Artel S.r.l. in telecontrollo, automazione industriale e system integration.">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,7 +17,9 @@
       <li><a href="automazione-industriale.html">Automazione Industriale</a></li>
       <li><a href="telecontrollo.html">Telecontrollo</a></li>
       <li><a href="system-integration.html">System Integration</a></li>
+      <li><a href="rilevazione-presenze.html">Rilevazione Presenze</a></li>
       <li><a href="casi-studio.html" class="active">Casi Studio</a></li>
+      <li><a href="clienti.html">Clienti</a></li>
       <li><a href="chi-siamo.html">Chi Siamo</a></li>
       <li><a href="contatti.html">Contatti</a></li>
     </ul>
@@ -31,10 +33,10 @@
 <section class="page-hero">
   <div class="wrap">
     <div class="breadcrumb"><a href="index.html">Home</a> / Casi Studio</div>
-    <span class="eyebrow">Progetti reali, risultati misurabili</span>
+    <span class="eyebrow">Esempi di intervento tipo</span>
     <h1>Casi Studio</h1>
-    <p>Ogni progetto parte da un problema concreto. Ecco come lo abbiamo affrontato, con quali tecnologie e con quale risultato.</p>
-    <p style="font-size:0.82rem; color:var(--text-faint); margin-top:8px;">Nota: i casi seguenti sono esempi illustrativi del formato, non dati aziendali riservati.</p>
+    <p>Ogni progetto parte da un problema concreto. Ecco tre schemi tipici di intervento, con le tecnologie che utilizziamo realmente in questi ambiti.</p>
+    <p style="font-size:0.82rem; color:var(--text-faint); margin-top:8px;">Nota: i tre esempi seguenti descrivono pattern di intervento tipici del nostro lavoro, non progetti specifici realizzati per i clienti elencati nella pagina <a href="clienti.html" style="color:var(--accent);">Clienti</a>.</p>
   </div>
 </section>
 
@@ -43,23 +45,23 @@
 
     <article id="acquedotto" class="case-card">
       <span class="case-tag">Telecontrollo</span>
-      <h2>Telecontrollo di un acquedotto comunale</h2>
+      <h2>Telecontrollo di una rete acquedottistica</h2>
       <div class="case-grid">
         <div class="case-step">
           <h4>Problema</h4>
-          <p>Rete idrica distribuita su 40 impianti, con letture manuali periodiche e perdite individuate solo dopo settimane, con conseguenti sprechi e costi di intervento elevati.</p>
+          <p>Rete idrica distribuita su decine di siti periferici (pozzi, serbatoi, stazioni di pompaggio), con letture manuali periodiche e perdite individuate solo dopo giorni o settimane.</p>
         </div>
         <div class="case-step">
           <h4>Soluzione</h4>
-          <p>Sistema di telecontrollo centralizzato con acquisizione dati da remoto, soglie di allarme configurabili e dashboard di supervisione per l'intera rete.</p>
+          <p>Sistema di telecontrollo centralizzato con telelettura e teleazione da un centro di supervisione, eventualmente organizzato in rete gerarchica per le reti più estese.</p>
         </div>
         <div class="case-step">
           <h4>Tecnologie</h4>
-          <p>PLC di campo, rete di comunicazione dedicata, piattaforma SCADA di supervisione, storicizzazione dati e notifiche automatiche ai reperibili.</p>
+          <p>Unità periferiche RTU della famiglia RTU_Net su radio 433/868 MHz, unità di controllo UC400, comunicazione anche su RS485/GSM/ADSL, storicizzazione dati e allarmi.</p>
         </div>
         <div class="case-step result">
           <h4>Risultato</h4>
-          <p>Individuazione delle anomalie in poche ore invece che settimane, con una riduzione significativa delle perdite idriche e degli interventi in emergenza.</p>
+          <p>Individuazione delle anomalie in poche ore, riduzione delle perdite idriche e intervento tecnico garantito entro 8 ore lavorative, ripristino entro 16.</p>
         </div>
       </div>
     </article>
@@ -74,38 +76,38 @@
         </div>
         <div class="case-step">
           <h4>Soluzione</h4>
-          <p>Sostituzione del sistema SCADA con una piattaforma moderna, sinottici aggiornati e reportistica automatica su fermi, scarti e produttività di linea.</p>
+          <p>Aggiornamento delle logiche PLC e sostituzione della supervisione con una piattaforma SCADA moderna, con sinottici e reportistica su fermi, scarti e produttività.</p>
         </div>
         <div class="case-step">
           <h4>Tecnologie</h4>
-          <p>Aggiornamento logiche PLC, nuova piattaforma SCADA, interfacce HMI ridisegnate e raccolta dati predisposta per requisiti Industria 4.0.</p>
+          <p>PLC Siemens o Allen Bradley in base al parco macchine esistente, supervisione su WinCC o RSView, quadro elettrico aggiornato con componenti ABB/Schneider.</p>
         </div>
         <div class="case-step result">
           <h4>Risultato</h4>
-          <p>Fermi macchina ridotti grazie a diagnosi più rapide e tracciabilità completa dei lotti prodotti, richiesta anche dai clienti a valle della filiera.</p>
+          <p>Diagnosi dei fermi più rapida, dati storicizzati per l'analisi di produttività e base pronta per i requisiti di interconnessione Industria 4.0.</p>
         </div>
       </div>
     </article>
 
     <article id="erp-mes" class="case-card">
       <span class="case-tag">System Integration</span>
-      <h2>Integrazione ERP–MES in uno stabilimento manifatturiero</h2>
+      <h2>Integrazione tra automazione e ERP</h2>
       <div class="case-grid">
         <div class="case-step">
           <h4>Problema</h4>
-          <p>Dati di produzione raccolti manualmente e inseriti a fine turno nell'ERP, con ritardi, errori di trascrizione e visibilità limitata sull'avanzamento reale.</p>
+          <p>Dati di produzione raccolti manualmente e inseriti a fine turno nel gestionale, con ritardi, errori di trascrizione e visibilità limitata sull'avanzamento reale.</p>
         </div>
         <div class="case-step">
           <h4>Soluzione</h4>
-          <p>Integrazione diretta tra il livello di automazione, un sistema MES e l'ERP esistente, per un flusso dati automatico e coerente tra i sistemi.</p>
+          <p>Applicazione verticale che acquisisce gli ordini dal sistema informativo, li elabora tramite procedure dedicate e invia i dati di produzione ai macchinari di impianto.</p>
         </div>
         <div class="case-step">
           <h4>Tecnologie</h4>
-          <p>Connettori PLC–MES, middleware di integrazione MES–ERP, mappatura degli ordini di produzione e sincronizzazione degli avanzamenti in tempo reale.</p>
+          <p>Interfacciamento PLC/SCADA verso sistemi informativi diffusi come SAP, applicazione MES per il tracciamento di produzione e la gestione della manutenzione.</p>
         </div>
         <div class="case-step result">
           <h4>Risultato</h4>
-          <p>Eliminazione degli inserimenti manuali, dati di produzione disponibili in tempo reale in ERP e reportistica di produzione allineata a magazzino e vendite.</p>
+          <p>Rendicontazione della produzione automatica verso il sistema informativo, senza più inserimenti manuali e con dati coerenti tra impianto e gestionale.</p>
         </div>
       </div>
     </article>
@@ -130,7 +132,7 @@
     <div class="footer-grid">
       <div>
         <a href="index.html" class="logo">ARTEL<span>.</span></a>
-        <p style="margin-top:14px; max-width:280px;">Automazione industriale, SCADA, telecontrollo e system integration dal 1996.</p>
+        <p style="margin-top:14px; max-width:280px;">Automazione industriale, telecontrollo, system integration e controllo accessi. Dal 1996, certificata ISO 9001:2015.</p>
       </div>
       <div>
         <h4>Competenze</h4>
@@ -138,6 +140,7 @@
           <li><a href="automazione-industriale.html">Automazione Industriale</a></li>
           <li><a href="telecontrollo.html">Telecontrollo</a></li>
           <li><a href="system-integration.html">System Integration</a></li>
+          <li><a href="rilevazione-presenze.html">Rilevazione Presenze</a></li>
         </ul>
       </div>
       <div>
@@ -145,20 +148,22 @@
         <ul>
           <li><a href="chi-siamo.html">Chi Siamo</a></li>
           <li><a href="casi-studio.html">Casi Studio</a></li>
+          <li><a href="clienti.html">Clienti</a></li>
           <li><a href="contatti.html">Contatti</a></li>
         </ul>
       </div>
       <div>
         <h4>Contatti</h4>
         <ul>
-          <li><a href="mailto:info@artel-example.it">info@artel-example.it</a></li>
-          <li><a href="tel:+390000000000">+39 000 000 0000</a></li>
+          <li><a href="mailto:info@artelsrl.it">info@artelsrl.it</a></li>
+          <li><a href="tel:+390744800928">+39 0744.800928</a></li>
+          <li>Str. di Collescipoli, 19 — Terni</li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Artel S.r.l. — Concept di redesign, contenuti a scopo illustrativo.</span>
-      <span>Automazione Industriale · SCADA · Telecontrollo</span>
+      <span>© 2026 Artel S.r.l. — P.IVA/C.F. 00706970555 — Registro Imprese Terni n° 00706970555 — R.E.A. TR n° 69992.</span>
+      <span>Automazione Industriale · Telecontrollo · System Integration</span>
     </div>
   </div>
 </footer>
